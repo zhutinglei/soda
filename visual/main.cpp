@@ -1,3 +1,4 @@
+/// to compile, you need to link iau sofa library with -lsofa_c
 #include <iostream>
 #include <iomanip>
 #include "pos2rae.h"
