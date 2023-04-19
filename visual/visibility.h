@@ -36,7 +36,7 @@ int isVisible(double target_xyz[3], double station_lbh[3], double utc, double xp
 {
     double target_rae[3];
     int j = pos2rae(target_xyz, station_lbh, utc, xp, yp, dut, target_rae);
-    bool night = isNight(utc, station_lbh, xp, yp, dut, 0.0);
+    bool night = isNight(utc, station_lbh, xp, yp, dut, -9.0);
     bool illuminated = isIlluminated(target_xyz, utc, dut);
     if (target_rae[2] < elevation)
     {
